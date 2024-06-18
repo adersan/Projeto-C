@@ -236,43 +236,6 @@ void modifyContact() {
     }
 }
 
-/*void searchContact() {
-    char cpf[MAX_CPF_LENGTH];
-    int i = 0;
-    int j = 0;
-    int choice;
-    printf("DIGITE O CPF DO CONTATO:\n ");
-    fflush(stdin);
-    fgets(cpf, MAX_CPF_LENGTH, stdin);
-    //Funçao da biblioteca string para remover \n
-    size_t newline_index = strcspn(cpf, "\n");
-  	cpf[newline_index] = '\0';
-    for (i = 0; cpf[i] != '\0'; i++) {
-    	cpf[i] = toupper(cpf[i]);	
-	}
-	//Found em 0 e a funç]ão de comparação/
-    int found = 0;
-    for (i = 0; i < numContacts; i++) {
-        if (strcmp(cpfs[i], cpf) == 0) {
-            found = 1;
-        	printf("------------------------------------\n");
-    printf("-=-=-=-=- LISTA DE CONTATOS -=-=-=-=\n");
-    for (i = 0; i < numContacts; i++) {
-    	//for (j=i;j=numContacts;j++ ){
-    	
-    	printf("------------------------------------\n");
-        printf("Nome: %s\n", names[i]);
-        printf("Telefone: %s\n", phones[i]);
-        printf("E-mail: %s\n", emails[i]);
-        printf("CPF: %s\n", cpfs[i]);
-        printf("\n");
-        printf("------------------------------------\n");
-    }
-
-		
-	}
-}
-}*/
 void searchContact() {
     char cpf[MAX_CPF_LENGTH];
     int i = 0;
